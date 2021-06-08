@@ -1,0 +1,22 @@
+.option.button {
+  height: 38px;
+  background-color: var(--secondary-bg);
+  color: var(--title-text-color);
+}
+
+.option.button:hover {
+  background-color: var(--accent);
+  color: var(--primary-bg-color);
+}
+
+.project__title {
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.project__descriptioon {
+  font-size: 16px;
+  line-height: 1.8;
+}
