@@ -8,8 +8,16 @@
   --black-rock: #2f303a;
 }
 
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: 2px solid turquoise;
+  margin-top: 10px;
 }
 
 body {
@@ -30,7 +38,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  font-size: 9px;
 }
 
 .contacts {
@@ -63,6 +71,7 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
+  outline: 2p solid tomato;
 }
 
 .logo__link {
@@ -75,6 +84,10 @@ body {
 }
 
 /* Site nav */
+.navigation {
+  outline: 2p solid tomato;
+}
+
 .menu__link {
   color: var(--title-text-color);
   text-decoration: none;
