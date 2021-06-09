@@ -2,48 +2,62 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1600, initial-scale=1.0" />
+    <title>POrtfoli</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <!-- Site Styles -->
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/portfolio.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav>
+    <header class="page-header">
+      <div class="container main-nav">
         <!-- Logo -->
-        <div class="logo">
-          <a href="" class="logo__link"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
-        </div>
+        <nav class="navigation">
+          <div class="logo">
+            <a href="" class="logo__link"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+          </div>
 
-        <!-- Menu -->
-
-        <ul class="menu list">
-          <li class="menu__item"><a class="menu__link" href="">Студия</a></li>
-          <li class="menu__item">
-            <a class="menu__link" href="portfolio.html">Портфолио</a>
-          </li>
-          <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
-        </ul>
+          <!-- Menu -->
+          <ul class="menu list">
+            <li class="menu__item">
+              <a class="menu__link current" href="">Студия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
         <!-- Login -->
-        <div class="page-header contacts">
-          <a class="contacts__link" href="mailto://info@example.com"
-            >info@example.com</a
-          >
-          <a class="contacts__link" href="tel://+380991111111"
-            >+38 099 111 11 11</a
-          >
-        </div>
-      </nav>
+        <ul class="page-header contacts list">
+          <li class="page-header contacts__item">
+            <a class="contacts__link" href="mailto://info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li class="page-header contacts__item">
+            <a class="contacts__link" href="tel://+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- Main -->
@@ -152,17 +166,23 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-      <a href="" class="logo"><span class="logo__accent">Web</span>Studio</a>
-      <address class="contacts">
-        г. Киев, пр-т Леси Украинки, 26 <br />
-        <a class="contacts__link" href="mailto://info@example.com"
-          >info@example.com</a
-        ><br />
-        <a class="contacts__link" href="tel://+380991111111"
-          >+38 099 111 11 11</a
-        ><br />
-      </address>
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <a href="" class="logo__link"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+        </div>
+        <address class="contacts">
+          г. Киев, пр-т Леси Украинки, 26 <br />
+          <a class="contacts__link" href="mailto://info@example.com"
+            >info@example.com</a
+          ><br />
+          <a class="contacts__link" href="tel://+380991111111"
+            >+38 099 111 11 11</a
+          ><br />
+        </address>
+      </div>
     </footer>
   </body>
 </html>
