@@ -21,7 +21,7 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <div class="container">
+      <div class="container main-nav">
         <!-- Logo -->
         <nav class="navigation">
           <div class="logo">
@@ -32,7 +32,9 @@
 
           <!-- Menu -->
           <ul class="menu list">
-            <li class="menu__item"><a class="menu__link" href="">Студия</a></li>
+            <li class="menu__item">
+              <a class="menu__link current" href="">Студия</a>
+            </li>
             <li class="menu__item">
               <a class="menu__link" href="portfolio.html">Портфолио</a>
             </li>
@@ -43,14 +45,18 @@
         </nav>
 
         <!-- Login -->
-        <div class="page-header contacts">
-          <a class="contacts__link" href="mailto://info@example.com"
-            >info@example.com</a
-          >
-          <a class="contacts__link" href="tel://+380991111111"
-            >+38 099 111 11 11</a
-          >
-        </div>
+        <ul class="page-header contacts list">
+          <li class="page-header contacts__item">
+            <a class="contacts__link" href="mailto://info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li class="page-header contacts__item">
+            <a class="contacts__link" href="tel://+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -70,28 +76,28 @@
           <h2 class="section__heading hidden">Особенности</h2>
           <!-- Why us -->
           <ul class="features list">
-            <li>
+            <li class="features__item">
               <h3 class="features__title">Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="features__item">
               <h3 class="features__title">Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="features__item">
               <h3 class="features__title">Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="features__item">
               <h3 class="features__title">Современные технологии</h3>
               <p>
                 Значимость этих проблем настолько очевидна, что реализация
@@ -106,22 +112,23 @@
       <section class="section development">
         <div class="container">
           <h2 class="section__heading">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+
+          <ul class="dev list">
+            <li class="dev__item">
               <img
                 src="./images/coding.jpg"
                 alt="Кодинг на планшете"
                 width="370"
               />
             </li>
-            <li>
+            <li class="dev__item">
               <img
                 src="./images/phone.jpg"
                 alt="Разработка миобильного приложения"
                 width="370"
               />
             </li>
-            <li>
+            <li class="dev__item">
               <img
                 src="./images/palette.jpg"
                 alt="Цветовая схема"
