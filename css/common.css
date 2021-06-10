@@ -30,10 +30,6 @@ body {
   margin: 0;
 }
 
-.hidden {
-  font-size: 9px;
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -192,4 +188,8 @@ body {
 
 .footer.contacts__item {
   margin-top: 9;
+}
+
+.hidden {
+  display: none;
 }
