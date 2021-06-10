@@ -105,32 +105,3 @@
   margin-top: 10px;
   margin-bottom: 0;
 }
-
-.test-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.flex-container {
-  background-color: turquoise;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex-element {
-  background-color: tomato;
-  width: 370px;
-  color: var(--title-text-color);
-
-}
-
-.flex-element:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.flex-element:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
