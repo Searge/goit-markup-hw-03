@@ -1,22 +1,14 @@
 :root {
-  --accent: #2196f3;
   --primary-bg-color: #fff;
   --secondary-bg: #f5f4fa;
+  --ternary-bg: #2f303a;
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --black: #000;
-  --black-rock: #2f303a;
+  --logo-color: #000;
+  --accent: #2196f3;
+  --border-color: #ececec;
+  --border-box-color: #eeeeee;
 }
-
-/* html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
 
 body {
   /* width: 1600px; */
@@ -50,8 +42,10 @@ body {
   padding-right: 15px;
 }
 
+/* Header */
 .page-header {
-  color: var(--black);
+  color: var(--logo-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .page-header > .container {
@@ -80,7 +74,6 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-  outline: 2p solid tomato;
 }
 
 .logo__link {
@@ -92,6 +85,7 @@ body {
   color: var(--accent);
 }
 
+/* Menu */
 .menu {
   display: flex;
   margin-left: 90px;
@@ -119,11 +113,12 @@ body {
   color: var(--accent);
 }
 
-.page-header.contacts {
+/* Contacts Header */
+.page-header .contacts {
   display: flex;
 }
 
-.page-header.contacts__item + .page-header.contacts__item {
+.main-nav.contacts__item + .main-nav.contacts__item {
   margin-left: 50px;
 }
 
@@ -141,20 +136,19 @@ body {
   color: var(--accent);
 }
 
-.page-header.contacts__item > .contacts__link {
+.main-nav.contacts__item > .contacts__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.button {
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.06em;
-  text-decoration: none;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+/* Buttons */
+.button {
   color: var(--primary-bg-color);
   background-color: var(--accent);
   border-radius: 4px;
@@ -163,6 +157,14 @@ body {
   display: inline-block;
   padding: 10px 32px;
   min-width: 200px;
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -170,13 +172,24 @@ body {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--black-rock);
+.footer {
+  background-color: var(--ternary-bg);
   color: var(--primary-bg-color);
 }
 
-footer.logo__link {
+.footer.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer.logo {
+  margin-bottom: 20px;
+}
+
+.footer.logo__link {
   color: var(--primary-bg-color);
+}
+
+.footer.contacts__item {
+  margin-top: 9;
 }

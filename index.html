@@ -25,7 +25,7 @@
         <!-- Logo -->
         <nav class="navigation">
           <div class="logo">
-            <a href="" class="logo__link"
+            <a href="./" class="logo__link"
               ><span class="logo__accent">Web</span>Studio</a
             >
           </div>
@@ -33,7 +33,7 @@
           <!-- Menu -->
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link current" href="">Студия</a>
+              <a class="menu__link current" href="./">Студия</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="portfolio.html">Портфолио</a>
@@ -45,13 +45,13 @@
         </nav>
 
         <!-- Login -->
-        <ul class="page-header contacts list">
-          <li class="page-header contacts__item">
+        <ul class="contacts list">
+          <li class="main-nav contacts__item">
             <a class="contacts__link" href="mailto://info@example.com"
               >info@example.com</a
             >
           </li>
-          <li class="page-header contacts__item">
+          <li class="main-nav contacts__item">
             <a class="contacts__link" href="tel://+380991111111"
               >+38 099 111 11 11</a
             >
@@ -73,7 +73,7 @@
       <!-- Features -->
       <section class="section features">
         <div class="container">
-          <h2 class="section__heading hidden">Особенности</h2>
+          <h2 class="hidden section__heading">Особенности</h2>
           <!-- Why us -->
           <ul class="features list">
             <li class="features__item">
@@ -146,6 +146,7 @@
           <ul class="team list">
             <li class="team__item">
               <img src="./images/igor.jpg" alt="Игорь" width="270" />
+
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p>Product Designer</p>
             </li>
@@ -170,21 +171,28 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="logo">
-          <a href="" class="logo__link"
+    <footer class="footer">
+      <div class="footer container">
+        <div class="footer logo">
+          <a href="./" class="logo__link"
             ><span class="logo__accent">Web</span>Studio</a
           >
         </div>
-        <address class="contacts">
-          г. Киев, пр-т Леси Украинки, 26 <br />
-          <a class="contacts__link" href="mailto://info@example.com"
-            >info@example.com</a
-          ><br />
-          <a class="contacts__link" href="tel://+380991111111"
-            >+38 099 111 11 11</a
-          ><br />
+
+        <address class="footer contacts">
+          г. Киев, пр-т Леси Украинки, 26
+          <ul class="footer contacts list">
+            <li class="footer contacts__item">
+              <a class="contacts__link" href="mailto://info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer contacts__item">
+              <a class="contacts__link" href="tel://+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
         </address>
       </div>
     </footer>

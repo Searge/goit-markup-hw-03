@@ -1,12 +1,42 @@
-.option.button {
+/* Filter */
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.features__item + .features__item {
+  display: block;
+  margin-left: 8px;
+}
+
+/* Filter Buttons */
+.filter.button {
+  min-width: 73px;
   height: 38px;
   background-color: var(--secondary-bg);
   color: var(--title-text-color);
 }
 
-.option.button:hover {
+.filter.button:hover {
   background-color: var(--accent);
   color: var(--primary-bg-color);
+}
+
+/* Project */
+.project {
+  display: flex;
+  /* align-items: center;
+  align-content: space-around; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project__item {
+  border: 1px solid var(--border-box-color);
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .project__title {
