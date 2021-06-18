@@ -25,6 +25,24 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Dropped the global margins, like in Sasha Rupeta's styles
+https://github.com/luxplanjay/flex-grid-tutorial/blob/aa4ed53f34aa84b2d278ebc350dbe9a6f6584aa3/css/styles.css#L15-L29
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /*
  .d8888b.
 d88P  Y88b
@@ -192,9 +210,11 @@ Y88b  d88P Y88..88P 888  888  888 888  888  888 Y88..88P 888  888
   letter-spacing: 0.03em;
 }
 
-.footer.container {
+.footer-main {
+  /* Paddings from footer.container to parent */
   padding-top: 60px;
   padding-bottom: 60px;
+  /* END of changes */
 }
 
 .footer > .logo {
@@ -231,7 +251,9 @@ Y88b  d88P Y88..88P 888  888  888 888  888  888 Y88..88P 888  888
 }
 
 .hero > .container {
-  padding: 200px;
+  /* Changed global width & paddings */
+  padding: 200px 0;
+  width: 696px;
 }
 
 .hero__title {
@@ -263,11 +285,11 @@ Y88b  d88P Y88..88P 888  888  888 888  888  888 Y88..88P 888  888
   margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
-  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
 }
 
 .features.list {
@@ -321,6 +343,11 @@ Y88b  d88P Y88..88P 888  888  888 888  888  888 Y88..88P 888  888
   margin-top: 30px;
   margin-bottom: 0;
   color: var(--title-text-color);
+  /*
+  font size inherit ftom .team__item, actually (-:
+  BUT: whatever;
+  */
+  font-size: 16px;
   font-weight: 500;
 }
 
