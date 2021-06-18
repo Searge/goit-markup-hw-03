@@ -296,6 +296,10 @@ Y88b  d88P Y88..88P 888  888  888 888  888  888 Y88..88P 888  888
   display: flex;
 }
 
+.features__item {
+  width: 270px;
+}
+
 .features__item + .features__item {
   margin-left: 30px;
 }
